@@ -1,0 +1,13 @@
+[package]
+name = "verity"
+version = "0.1.1"
+edition = "2021"
+authors = ["elci-group"]
+description = "Checks whether a README's claims are backed by evidence in the code — catches features that are documented but never implemented, or implemented but never tested."
+license = "MIT"
+repository = "https://github.com/elci-group/verity"
+
+[dependencies]
+clap = { version = "4.3", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
