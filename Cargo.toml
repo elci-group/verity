@@ -1,6 +1,6 @@
 [package]
 name = "verity"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 authors = ["elci-group"]
 description = "Checks whether a README's claims are backed by evidence in the code — catches features that are documented but never implemented, or implemented but never tested."

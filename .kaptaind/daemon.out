@@ -1,0 +1,15 @@
+[2m2026-08-27T10:51:51.788106Z[0m [32m INFO[0m [2mkaptaind[0m[2m:[0m Starting kaptaind
+[2m2026-08-27T10:51:51.788133Z[0m [32m INFO[0m [2mkaptaind[0m[2m:[0m Watching repository at: /home/sal/verity/
+[2m2026-08-27T10:51:51.795192Z[0m [32m INFO[0m [2mkaptaind::daemon::runtime[0m[2m:[0m capability network_push is disabled
+[2m2026-08-27T10:51:51.795206Z[0m [32m INFO[0m [2mkaptaind::daemon::runtime[0m[2m:[0m capability network_webhooks is disabled
+[2m2026-08-27T10:51:51.795209Z[0m [32m INFO[0m [2mkaptaind::daemon::runtime[0m[2m:[0m capability network_inference is disabled
+[2m2026-08-27T10:51:51.795211Z[0m [32m INFO[0m [2mkaptaind::daemon::runtime[0m[2m:[0m capability bundle_scoring is disabled
+[2m2026-08-27T10:51:51.795213Z[0m [32m INFO[0m [2mkaptaind::daemon::runtime[0m[2m:[0m capability external_plugins is disabled
+[2m2026-08-27T10:51:51.795296Z[0m [32m INFO[0m [2mkaptaind::daemon::health[0m[2m:[0m health server listening [3maddr[0m[2m=[0m127.0.0.1:3203
+[2m2026-08-27T10:51:51.920158Z[0m [32m INFO[0m [2mkaptaind::angler::git_hooks[0m[2m:[0m Installed 7 git hooks
+[2m2026-08-27T10:51:51.920173Z[0m [32m INFO[0m [2mkaptaind::angler[0m[2m:[0m Git hooks installed successfully
+[2m2026-08-27T10:51:51.920177Z[0m [32m INFO[0m [2mkaptaind::daemon::scheduler[0m[2m:[0m Angler system initialized
+[2m2026-08-27T11:51:51.807786Z[0m [32m INFO[0m [2mkaptaind::daemon::runtime[0m[2m:[0m pruned analysis artifacts [3mdeleted[0m[2m=[0m0 [3merrors[0m[2m=[0m0
+[2m2026-08-27T12:51:53.971031Z[0m [32m INFO[0m [2mkaptaind::daemon::runtime[0m[2m:[0m pruned analysis artifacts [3mdeleted[0m[2m=[0m0 [3merrors[0m[2m=[0m0
+[2m2026-08-27T13:07:15.113646Z[0m [32m INFO[0m [2mkaptaind::daemon::scheduler[0m[2m:[0m cluster window expired by timeout [3mcluster_id[0m[2m=[0m4fd20814-37af-40c1-9aaf-c07071a46ee5
+[2m2026-08-27T13:07:36.818914Z[0m [32m INFO[0m [2mkaptaind::daemon::scheduler[0m[2m:[0m Token usage and cost tracking [3minput_tokens[0m[2m=[0m2184 [3moutput_tokens[0m[2m=[0m35 [3mmarginal_cost[0m[2m=[0m0.0011445000000000001 [3maggregate_cost[0m[2m=[0m0.0045915
