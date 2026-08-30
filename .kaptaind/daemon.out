@@ -1,25 +1,27 @@
-[2m2026-08-27T10:51:51.788106Z[0m [32m INFO[0m [2mkaptaind[0m[2m:[0m Starting kaptaind
-[2m2026-08-27T10:51:51.788133Z[0m [32m INFO[0m [2mkaptaind[0m[2m:[0m Watching repository at: /home/sal/verity/
-[2m2026-08-27T10:51:51.795192Z[0m [32m INFO[0m [2mkaptaind::daemon::runtime[0m[2m:[0m capability network_push is disabled
-[2m2026-08-27T10:51:51.795206Z[0m [32m INFO[0m [2mkaptaind::daemon::runtime[0m[2m:[0m capability network_webhooks is disabled
-[2m2026-08-27T10:51:51.795209Z[0m [32m INFO[0m [2mkaptaind::daemon::runtime[0m[2m:[0m capability network_inference is disabled
-[2m2026-08-27T10:51:51.795211Z[0m [32m INFO[0m [2mkaptaind::daemon::runtime[0m[2m:[0m capability bundle_scoring is disabled
-[2m2026-08-27T10:51:51.795213Z[0m [32m INFO[0m [2mkaptaind::daemon::runtime[0m[2m:[0m capability external_plugins is disabled
-[2m2026-08-27T10:51:51.795296Z[0m [32m INFO[0m [2mkaptaind::daemon::health[0m[2m:[0m health server listening [3maddr[0m[2m=[0m127.0.0.1:3203
-[2m2026-08-27T10:51:51.920158Z[0m [32m INFO[0m [2mkaptaind::angler::git_hooks[0m[2m:[0m Installed 7 git hooks
-[2m2026-08-27T10:51:51.920173Z[0m [32m INFO[0m [2mkaptaind::angler[0m[2m:[0m Git hooks installed successfully
-[2m2026-08-27T10:51:51.920177Z[0m [32m INFO[0m [2mkaptaind::daemon::scheduler[0m[2m:[0m Angler system initialized
-[2m2026-08-27T11:51:51.807786Z[0m [32m INFO[0m [2mkaptaind::daemon::runtime[0m[2m:[0m pruned analysis artifacts [3mdeleted[0m[2m=[0m0 [3merrors[0m[2m=[0m0
-[2m2026-08-27T12:51:53.971031Z[0m [32m INFO[0m [2mkaptaind::daemon::runtime[0m[2m:[0m pruned analysis artifacts [3mdeleted[0m[2m=[0m0 [3merrors[0m[2m=[0m0
-[2m2026-08-27T13:07:15.113646Z[0m [32m INFO[0m [2mkaptaind::daemon::scheduler[0m[2m:[0m cluster window expired by timeout [3mcluster_id[0m[2m=[0m4fd20814-37af-40c1-9aaf-c07071a46ee5
-[2m2026-08-27T13:07:36.818914Z[0m [32m INFO[0m [2mkaptaind::daemon::scheduler[0m[2m:[0m Token usage and cost tracking [3minput_tokens[0m[2m=[0m2184 [3moutput_tokens[0m[2m=[0m35 [3mmarginal_cost[0m[2m=[0m0.0011445000000000001 [3maggregate_cost[0m[2m=[0m0.0045915
-[2m2026-08-27T13:07:38.132015Z[0m [32m INFO[0m [2mkaptaind::daemon::scheduler[0m[2m:[0m cluster window expired by new event [3mcluster_id[0m[2m=[0mcbfba521-96c0-46f7-a593-8b3d9bf0db98
-[2m2026-08-27T13:07:46.062253Z[0m [32m INFO[0m [2mkaptaind::daemon::scheduler[0m[2m:[0m cluster window expired by timeout [3mcluster_id[0m[2m=[0m3cb9234f-7625-4da3-bb22-7dbe0e4c0d5b
-[2m2026-08-27T13:07:50.398155Z[0m [32m INFO[0m [2mkaptaind::daemon::scheduler[0m[2m:[0m Token usage and cost tracking [3minput_tokens[0m[2m=[0m3476 [3moutput_tokens[0m[2m=[0m35 [3mmarginal_cost[0m[2m=[0m0.0017905 [3maggregate_cost[0m[2m=[0m0.0063820000000000005
-[2m2026-08-27T13:07:58.373509Z[0m [32m INFO[0m [2mkaptaind::daemon::scheduler[0m[2m:[0m cluster window expired by timeout [3mcluster_id[0m[2m=[0m0f00f11b-50ad-4cca-83b2-f0a7ec5fac20
-[2m2026-08-27T13:08:05.505118Z[0m [32m INFO[0m [2mkaptaind::daemon::scheduler[0m[2m:[0m Token usage and cost tracking [3minput_tokens[0m[2m=[0m234 [3moutput_tokens[0m[2m=[0m35 [3mmarginal_cost[0m[2m=[0m0.00016950000000000003 [3maggregate_cost[0m[2m=[0m0.006551500000000001
-[2m2026-08-27T13:08:10.620278Z[0m [32m INFO[0m [2mkaptaind::daemon::scheduler[0m[2m:[0m cluster window expired by timeout [3mcluster_id[0m[2m=[0m088a7dac-4009-425e-abde-21dff3ede30b
-[2m2026-08-27T13:08:11.528176Z[0m [32m INFO[0m [2mkaptaind::daemon::scheduler[0m[2m:[0m Token usage and cost tracking [3minput_tokens[0m[2m=[0m5097 [3moutput_tokens[0m[2m=[0m35 [3mmarginal_cost[0m[2m=[0m0.0026010000000000004 [3maggregate_cost[0m[2m=[0m0.009152500000000001
-[2m2026-08-27T13:08:16.563230Z[0m [32m INFO[0m [2mkaptaind::daemon::scheduler[0m[2m:[0m cluster window expired by timeout [3mcluster_id[0m[2m=[0m13173791-cdba-4684-bd8e-b5b998cf89d0
-[2m2026-08-27T13:14:10.626915Z[0m [32m INFO[0m [2mkaptaind::daemon::scheduler[0m[2m:[0m cluster window expired by timeout [3mcluster_id[0m[2m=[0m005a8057-b437-43fb-bc2f-c5bad97da447
-[2m2026-08-27T13:14:14.577275Z[0m [32m INFO[0m [2mkaptaind::daemon::scheduler[0m[2m:[0m Token usage and cost tracking [3minput_tokens[0m[2m=[0m3914 [3moutput_tokens[0m[2m=[0m35 [3mmarginal_cost[0m[2m=[0m0.0020095 [3maggregate_cost[0m[2m=[0m0.011161999999999998
+[2m2026-05-14T13:42:12.176277Z[0m [32m INFO[0m [2mkaptaind[0m[2m:[0m Starting kaptaind
+[2m2026-05-14T13:42:12.176487Z[0m [32m INFO[0m [2mkaptaind[0m[2m:[0m Watching repository at: /home/sal/verity/
+[2m2026-05-14T13:42:12.195995Z[0m [32m INFO[0m [2mkaptaind::daemon::runtime[0m[2m:[0m capability network_push is disabled
+[2m2026-05-14T13:42:12.196104Z[0m [32m INFO[0m [2mkaptaind::daemon::runtime[0m[2m:[0m capability network_webhooks is disabled
+[2m2026-05-14T13:42:12.196128Z[0m [32m INFO[0m [2mkaptaind::daemon::runtime[0m[2m:[0m capability network_inference is disabled
+[2m2026-05-14T13:42:12.196145Z[0m [32m INFO[0m [2mkaptaind::daemon::runtime[0m[2m:[0m capability bundle_scoring is disabled
+[2m2026-05-14T13:42:12.196160Z[0m [32m INFO[0m [2mkaptaind::daemon::runtime[0m[2m:[0m capability external_plugins is disabled
+[2m2026-05-14T13:42:12.196797Z[0m [32m INFO[0m [2mkaptaind::daemon::health[0m[2m:[0m health server listening [3maddr[0m[2m=[0m127.0.0.1:3203
+[2m2026-05-14T13:42:12.452974Z[0m [32m INFO[0m [2mkaptaind::angler::git_hooks[0m[2m:[0m Installed 7 git hooks
+[2m2026-05-14T13:42:12.453135Z[0m [32m INFO[0m [2mkaptaind::angler[0m[2m:[0m Git hooks installed successfully
+[2m2026-05-14T13:42:12.453183Z[0m [32m INFO[0m [2mkaptaind::daemon::scheduler[0m[2m:[0m Angler system initialized
+[2m2026-08-29T13:13:53.662223Z[0m [32m INFO[0m [2mkaptaind::daemon::runtime[0m[2m:[0m pruned analysis artifacts [3mdeleted[0m[2m=[0m0 [3merrors[0m[2m=[0m0
+[2m2026-08-29T14:13:53.659302Z[0m [32m INFO[0m [2mkaptaind::daemon::runtime[0m[2m:[0m pruned analysis artifacts [3mdeleted[0m[2m=[0m0 [3merrors[0m[2m=[0m0
+[2m2026-08-29T15:13:53.658528Z[0m [32m INFO[0m [2mkaptaind::daemon::runtime[0m[2m:[0m pruned analysis artifacts [3mdeleted[0m[2m=[0m0 [3merrors[0m[2m=[0m0
+[2m2026-08-29T16:13:53.658961Z[0m [32m INFO[0m [2mkaptaind::daemon::runtime[0m[2m:[0m pruned analysis artifacts [3mdeleted[0m[2m=[0m0 [3merrors[0m[2m=[0m0
+[2m2026-08-29T17:13:53.661094Z[0m [32m INFO[0m [2mkaptaind::daemon::runtime[0m[2m:[0m pruned analysis artifacts [3mdeleted[0m[2m=[0m0 [3merrors[0m[2m=[0m0
+[2m2026-08-29T18:13:53.661879Z[0m [32m INFO[0m [2mkaptaind::daemon::runtime[0m[2m:[0m pruned analysis artifacts [3mdeleted[0m[2m=[0m0 [3merrors[0m[2m=[0m0
+[2m2026-08-29T19:13:53.661570Z[0m [32m INFO[0m [2mkaptaind::daemon::runtime[0m[2m:[0m pruned analysis artifacts [3mdeleted[0m[2m=[0m0 [3merrors[0m[2m=[0m0
+[2m2026-08-29T20:13:53.660358Z[0m [32m INFO[0m [2mkaptaind::daemon::runtime[0m[2m:[0m pruned analysis artifacts [3mdeleted[0m[2m=[0m0 [3merrors[0m[2m=[0m0
+[2m2026-08-29T21:32:46.880982Z[0m [32m INFO[0m [2mkaptaind::daemon::runtime[0m[2m:[0m pruned analysis artifacts [3mdeleted[0m[2m=[0m0 [3merrors[0m[2m=[0m0
+[2m2026-08-29T22:57:46.770414Z[0m [32m INFO[0m [2mkaptaind::daemon::runtime[0m[2m:[0m pruned analysis artifacts [3mdeleted[0m[2m=[0m0 [3merrors[0m[2m=[0m0
+[2m2026-08-30T07:53:16.293238Z[0m [32m INFO[0m [2mkaptaind::daemon::runtime[0m[2m:[0m pruned analysis artifacts [3mdeleted[0m[2m=[0m0 [3merrors[0m[2m=[0m0
+[2m2026-08-30T11:44:23.972370Z[0m [32m INFO[0m [2mkaptaind::daemon::runtime[0m[2m:[0m pruned analysis artifacts [3mdeleted[0m[2m=[0m0 [3merrors[0m[2m=[0m0
+[2m2026-08-30T13:21:57.624091Z[0m [32m INFO[0m [2mkaptaind::daemon::runtime[0m[2m:[0m SIGTERM received, initiating graceful shutdown
+[2m2026-08-30T13:21:57.625750Z[0m [32m INFO[0m [2mkaptaind::daemon::scheduler[0m[2m:[0m shutdown signal received, draining tasks
+[2m2026-08-30T13:22:22.632508Z[0m [33m WARN[0m [2mkaptaind::daemon::scheduler[0m[2m:[0m task drain timeout (25s), aborting remaining tasks
+[2m2026-08-30T13:22:22.633186Z[0m [32m INFO[0m [2mkaptaind::daemon::scheduler[0m[2m:[0m scheduler shutdown complete
