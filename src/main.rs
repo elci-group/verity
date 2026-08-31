@@ -26,7 +26,7 @@ use std::path::{Path, PathBuf};
 mod rules;
 use rules::{ClaimRule, Severity, CLAIM_RULES};
 
-#[derive(Parser)]
+#[derive(Clone, Parser)]
 #[command(
     name = "verity",
     version,
@@ -57,6 +57,12 @@ struct Report {
 
 fn __curly_original_main() -> std::process::ExitCode {
     let cli = Cli::parse();
+    let __curly_path: Vec<Option<String>> = match &cli.path { Some(v) => curly_expand::expand_or_literal(v.to_string_lossy().as_ref()).into_iter().map(Some).collect(), None => vec![None] };
+    let mut __curly_exit_code = std::process::ExitCode::SUCCESS;
+    for __curly_v_path in &__curly_path {
+        let mut cli = cli.clone();
+        cli.path = __curly_v_path.as_ref().map(|s| std::path::PathBuf::from(s.clone()));
+        __curly_exit_code = {
     let root = cli.path.unwrap_or_else(|| PathBuf::from("."));
 
     let readme = find_readme(&root);
@@ -98,6 +104,9 @@ fn __curly_original_main() -> std::process::ExitCode {
     } else {
         std::process::ExitCode::SUCCESS
     }
+};
+    }
+    __curly_exit_code
 }
 
 fn check_rule(rule: &ClaimRule, readme: &str, corpus: &str, test_corpus: &str) -> Option<Finding> {
