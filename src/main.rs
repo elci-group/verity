@@ -16,6 +16,8 @@
 //! to surface: a documented promise with no corresponding evidence, or
 //! evidence that exists but nothing exercises.
 
+mod curly_expand;
+
 use clap::Parser;
 use serde::Serialize;
 use std::fs;
@@ -53,7 +55,7 @@ struct Report {
     findings: Vec<Finding>,
 }
 
-fn main() -> std::process::ExitCode {
+fn __curly_original_main() -> std::process::ExitCode {
     let cli = Cli::parse();
     let root = cli.path.unwrap_or_else(|| PathBuf::from("."));
 
@@ -406,5 +408,42 @@ mod tests {
         let finding =
             check_rule(rule, &readme, &corpus, "").expect("should flag missing test coverage");
         assert!(finding.id.ends_with("-untested"));
+    }
+}
+
+fn main() {
+    let raw_args: Vec<String> = std::env::args().collect();
+    let mut positions: Vec<usize> = Vec::new();
+    let mut fields: Vec<Vec<String>> = Vec::new();
+    if let Some(__v) = raw_args.get(1) {
+        if !__v.starts_with('-') {
+            positions.push(1);
+            fields.push(curly_expand::expand_or_literal(__v));
+        }
+    }
+
+    if fields.is_empty() || fields.iter().all(|f| f.len() <= 1) {
+        __curly_original_main();
+        return;
+    }
+
+    let combos = curly_expand::cartesian(&fields);
+    let exe = std::env::current_exe().expect("resolve current exe");
+    let mut had_failure = false;
+    for combo in &combos {
+        let mut new_args = raw_args.clone();
+        for (slot, value) in positions.iter().zip(combo.iter()) {
+            new_args[*slot] = value.clone();
+        }
+        let status = std::process::Command::new(&exe)
+            .args(&new_args[1..])
+            .status()
+            .expect("failed to re-exec self");
+        if !status.success() {
+            had_failure = true;
+        }
+    }
+    if had_failure {
+        std::process::exit(1);
     }
 }
